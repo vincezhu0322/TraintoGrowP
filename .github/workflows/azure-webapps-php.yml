@@ -26,7 +26,7 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: TRAINTOGROW      # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: 'github/workflows/azure-webapps-php.yml.'      # set this to the path to your web app project, defaults to the repository root
+  AZURE_WEBAPP_PACKAGE_PATH: 'https://github.com/yodataylor/TraintoGrowP'      # set this to the path to your web app project, defaults to the repository root
   PHP_VERSION: '8.2'                  # set this to the PHP version to use
 
 permissions:
