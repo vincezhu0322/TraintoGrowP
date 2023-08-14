@@ -1,6 +1,9 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
-
+# This program will connect the website www.traintogrow.net from the Yodataylor/TraintoGrowP repository and attach it to a target web app in
+# Azure Web App Services in the name of TRAINTOGROW. TRAINTOGROW was created in Web App Services and is used as the final point for the site to be
+# hosted, being published on the World Wide Web.  This was done by Brian E Taylor. The project started in June 2022.  Changes can now be made from 
+# the Ionos Platform, which was chosen by the client/customer, and also in Github with the support of VScode on a local server.  
 name: Build and deploy PHP app to Azure Web App - TRAINTOGROW
 
 on:
