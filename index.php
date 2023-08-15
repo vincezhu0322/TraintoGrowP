@@ -153,7 +153,7 @@ include 'include/header.php'; ?>
                                 <option value="">Classes Offered</option>
                                 <option value="">Basic training</option>
                                 <option value="">Advance training</option>
-                                <option value="">making edibles </option>
+                                <option value="">Making edibles </option>
                                 <option value="">Operate grow business</option>
                                 <option value="">Train to roll</option>
                             </select>
