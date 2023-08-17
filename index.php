@@ -265,10 +265,11 @@ include 'include/header.php'; ?>
                     <!--</div>-->
                     <div class="col-12">
                         <body>
-  <script
-    src="https://www.paypal.com/sdk/js?client-id=CLIENT_ID" async>
-  </script>
-</body>
+                    <body>
+                        <script src="https://www.paypal.com/sdk/js?client-id=test"></script>
+                    <script>
+                        paypal.Buttons().render("body");
+                    </script>
                         <button type="submit" class="themeBtn themeBtn--full">Proceed</button>
                     </div>
                 </div>
