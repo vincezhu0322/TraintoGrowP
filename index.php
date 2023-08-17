@@ -264,7 +264,9 @@ include 'include/header.php'; ?>
                     <!--    </div>-->
                     <!--</div>-->
                     <div class="col-12">
-                        <button type="submit" class="themeBtn themeBtn--full">proceed</button>
+                        <button type="submit" class="themeBtn themeBtn--full"><><script src="https://www.paypal.com/sdk/js?client-id=CLIENT_ID"></script><div id="paypal-button-container"></div><script>
+    paypal.Buttons().render('#paypal-button-container')
+</script></></button>
                     </div>
                 </div>
             </form>
