@@ -323,44 +323,44 @@ include 'include/header.php'; ?>
              <!--   <ul class="testimonials__detailsSlider wow bounceInUp">
              <!--      <li class="testimonials__details">
                         <!-- <img src="images/person-img-1.png" alt="image" class="imgFluid"> -->
-                        <p>Jessica Pitcher</p>
-                        <span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
-                    </li>
-                    <li class="testimonials__details">
-                        <!-- <img src="images/person-img-2.png" alt="image" class="imgFluid"> -->
-                        <p>Eric Deshaw</p>
-                        <span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
-                    </li>
-                    <li class="testimonials__details">
-                        <!-- <img src="images/person-img-3.png" alt="image" class="imgFluid"> -->
-                        <p>Allison Criner</p>
-                        <span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
-                    </li>
-                    <li class="testimonials__details">
-                        <!-- <img src="images/person-img-3.png" alt="image" class="imgFluid"> -->
-                        <p>Jamarr Wilson</p>
-                        <span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
-                    </li>
-                    <li class="testimonials__details">
-                        <!-- <img src="images/person-img-3.png" alt="image" class="imgFluid"> -->
-                        <p>Kyle Grappin</p>
-                        <span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
-                    </li>
-                    <li class="testimonials__details">
-                        <!-- <img src="images/person-img-3.png" alt="image" class="imgFluid"> -->
-                        <p>Jorge Rodriguez</p>
-                        <span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
-                    </li>
-                    <li class="testimonials__details">
-                        <!-- <img src="images/person-img-3.png" alt="image" class="imgFluid"> -->
-                        <p>Jeff Weber</p>
-                        <span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+                        <!--<p>Jessica Pitcher</p>
+                        <!--<span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
+                    <!--</li>
+                    <!--<li class="testimonials__details">
+                        <!--<!-- <img src="images/person-img-2.png" alt="image" class="imgFluid"> -->
+                        <!--<p>Eric Deshaw</p>
+                        <!--<span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
+                    <!--</li>
+                    <!--<li class="testimonials__details">
+                        <!--<!-- <img src="images/person-img-3.png" alt="image" class="imgFluid"> -->
+                        <!--<p>Allison Criner</p>
+                        <!--<span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
+                    <!--</li>
+                    <!--<li class="testimonials__details">
+                        <!--<!-- <img src="images/person-img-3.png" alt="image" class="imgFluid"> -->
+                        <!--<p>Jamarr Wilson</p>
+                        <!--<span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
+                    <!--</li>
+                    <!--<li class="testimonials__details">
+                        <!--<!-- <img src="images/person-img-3.png" alt="image" class="imgFluid"> -->
+                        <!--<p>Kyle Grappin</p>
+                        <!--<span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
+                    <!--</li>
+                    <!--<li class="testimonials__details">
+                        <!--<!-- <img src="images/person-img-3.png" alt="image" class="imgFluid"> -->
+                        <!--<p>Jorge Rodriguez</p>
+                        <!--<span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
+                    <!--</li>
+                    <!--<li class="testimonials__details">
+                        <!--<!-- <img src="images/person-img-3.png" alt="image" class="imgFluid"> -->
+                        <!--<p>Jeff Weber</p>
+                        <!--<span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
+                    <!--</li>
+                <!--</ul>
+            <!--</div>
+        <!--</div>
+    <!--</div>
+<!--</div>
 
 <!-- About Us -->
 <div class='about mar-y'>
