@@ -289,22 +289,22 @@ include 'include/header.php'; ?>
 </div>
 
 <!-- Testimonials -->
-<div class="testimonials pb-5 mar-y">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-                <div class="testimonials__content section-content wow bounceInDown">
-                    <h4 class="heading">Our Testimonials</h4>
-                    <div class="my-4">
-                        <img src="images/quotation-img.png" alt="image" class="imgFluid">
-                    </div>
-                    <div class="testimonials__contentSlider">
-                        <q>Ronald runs a great class. I’ve been smoking for years, but he got me interested in
-                            growing
-                            my own and taught me how.</q>
-                        <q>Train to Grow taught me where the bud comes from and how to grow them. They are going to
-                            put
-                            my dispensary out of business.</q>
+<!--<div class="testimonials pb-5 mar-y"
+  <!--<div class="container">
+        <!--<div class="row justify-content-center">
+            <!--<div class="col-12 col-lg-8">
+                <!--<div class="testimonials__content section-content wow bounceInDown">
+                    <!--<h4 class="heading">Our Testimonials</h4>
+                    <!--<div class="my-4">
+                        <!--<img src="images/quotation-img.png" alt="image" class="imgFluid">
+                    <!--</div>
+                    <!--<div class="testimonials__contentSlider">
+                        <!--<q>Ronald runs a great class. I’ve been smoking for years, but he got me interested in
+                            <!--growing
+                            <!--my own and taught me how.</q>
+                        <!--<q>Train to Grow taught me where the bud comes from and how to grow them. They are going to
+                            <!--put
+                            C!--my dispensary out of business.</q>
                         <q>What an exciting guy to watch! Ronald is a passionate teacher. I’ve been growing my own
                             for
                             years and didn’t realize how much I was doing wrong.</q>
