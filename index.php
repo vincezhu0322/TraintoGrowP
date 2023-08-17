@@ -320,8 +320,8 @@ include 'include/header.php'; ?>
                             after TTG.</q>
                     </div>
                 </div>
-                <ul class="testimonials__detailsSlider wow bounceInUp">
-                    <li class="testimonials__details">
+             <!--   <ul class="testimonials__detailsSlider wow bounceInUp">
+             <!--      <li class="testimonials__details">
                         <!-- <img src="images/person-img-1.png" alt="image" class="imgFluid"> -->
                         <p>Jessica Pitcher</p>
                         <span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></span>
