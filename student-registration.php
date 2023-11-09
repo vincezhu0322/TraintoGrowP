@@ -55,11 +55,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // and not handle them directly for security
     // For example, demo processing logic in payment_gateway.php
 
+    // After successful paymeny, generate a unique token
+    $token = bin2hex(random_bytes(16)); // 32 characters long
+    $expiryDate = new DateTime('+7 days'); // Token valid for 7 days
+    // Store the token and expiry date in the database
+    // Psuedo code to execute database queries
+    storeTokenInDatabase($studentId, $token, $expiryDate->format('Y-m-d H:i:s'));
+
     // PDO database connection instance to prepare pseudo SQL statement (... represents other fields)
     $stmt = $pdo->prepare("INSERT INTO students (name, address, ...) VALUES (?, ?, ...)");
     $stmt->execute([$name, $address, ...]);
 
-    // Send confirmation email
+    // Send confirmation email with token
     $to = $email;
     $subject = 'Registration Confirmation';
     $message = "Hello " . $name . ",\n\n";
@@ -69,6 +76,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message .= "Fee: $" . $fee . "\n";
     $message .= "Payment Method: " . $payment_method . "\n";
     $message .= "Date of Enrollment: " . $date_of_enrollment . "\n";
+    $message = "To access the video content, use the following link: \n";
+    $message .= "https://yourdomain.com/video_access.php?token=$token\n";
     $message .= "You will have access to the course videos for 7 days from the date of enrollment.\n\n";
     $message .= "Best regards,\n";
     $message .= "YodaTaylor's Training Team";
