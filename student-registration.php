@@ -44,6 +44,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors['payment_method'] = 'Payment method selection is invalid.';
     }
 
+    // Sanitize credit card details
+    $cardholderName = filter_input(INPUT_POST, 'cardholder_name', FILTER_SANITIZE_STRING);
+    $cardNumber = filter_input(INPUT_POST, 'card_number', FILTER_SANITIZE_NUMBER_INT);
+    $cardExpiry = filter_input(INPUT_POST, 'card_expiry', FILTER_SANITIZE_STRING);
+    $cardCVC = filter_input(INPUT_POST, 'card_cvc', FILTER_SANITIZE_NUMBER_INT);
+
+    // Process the payment through a payment gateway
+    // Send the credit card details to a payment processor's API
+    // and not handle them directly for security
+    // For example, demo processing logic in payment_gateway.php
+
     // PDO database connection instance to prepare pseudo SQL statement (... represents other fields)
     $stmt = $pdo->prepare("INSERT INTO students (name, address, ...) VALUES (?, ?, ...)");
     $stmt->execute([$name, $address, ...]);
@@ -81,6 +92,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Student Registration</title>
+    <script src="credit_card_processing.js"></script>
+    <script src="https://unpkg.com/imask"></script>
     <!-- other css stylesheet links -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -90,6 +103,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="container mt-5">
     <h2>Student Registration Form</h2>
     <form action="student-registration.php" method="post">
+
+        <!-- Student Personal Information -->
         <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" class="form-control" id="name" name="name" required>
@@ -98,7 +113,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label for="address">Address:</label>
             <input type="text" class="form-control" id="address" name="address" required>
         </div>
-        <!-- Extra place for other form fields -->
         <div class="form-group">
             <label for="city">City:</label>
             <input type="text" class="form-control" id="city" name="city" required>
@@ -119,28 +133,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label for="email">Email:</label>
             <input type="email" class="form-control" id="email" name="email" required>
         </div>
+        <!-- Extra place for other form fields -->
+
+        <!-- Course Information -->
         <div class="form-group">
             <label for="course">Course:</label>
             <select class="form-control" id="course" name="course">
                 <option value="beginner">Beginner</option>
                 <option value="intermediate">Intermediate</option>
                 <option value="advanced">Advanced</option>
-            </select>
+            </select> <!-- Course level dropdown -->
         </div>
         <div class="form-group">
             <label for="location">Course Location:</label>
             <select class="form-control" id="location" name="location">
                 <option value="online">Online</option>
                 <option value="detroit">Detroit, MI</option>
-            </select>
+            </select> <!-- Course location dropdown -->
         </div>
         <div class="form-group">
             <label for="fee">Fee:</label>
             <select class="form-control" id="fee" name="fee">
                 <option value="200">$200</option>
                 <option value="250">$250</option>
-            </select>
+            </select> <!-- Course fee dropdown -->
         </div>
+
+        <!-- Payment Information -->
         <div class="form-group">
             <label for="payment_method">Payment Method:</label>
             <select class="form-control" id="payment_method" name="payment_method">
@@ -151,8 +170,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <option value="cb">Citi Bank</option>
                 <option value="jpc">JP Morgan Chase</option>
                 <option value="check">Check</option>
-            </select>
+            </select> <!-- Payment method dropdown -->
         </div>
+        
+        <!-- Credit Card Details -->
+        <div id="credit-card-section">
+            <input type="text" id="name" name="cardholder_name" placeholder="Cardholder Name" required>
+            <input type="text" id="cardnumber" name="card_number" placeholder="Card Number" required>
+            <input type="text" id="expirationdate" name="card_expiry" placeholder="MM/YY" required>
+            <input type="text" id="securitycode" name="card_cvc" placeholder="CVC" required>
+        </div>
+
+        <!-- Submit Button -->
         <button type="submit" class="btn btn-primary">Register</button>
     </form>
 </div>
