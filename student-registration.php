@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!in_array($location, ['online', 'detroit'])) {
         $errors['location'] = 'Location selection is invalid.';
     }
-    if (!in_array($fee, [200.00, 250.00])) {
+    if (!in_array($fee, [200, 250])) {
         $errors['fee'] = 'Fee selection is invalid.';
     }
     if (!in_array($payment_method, $valid_payment_methods)) {
