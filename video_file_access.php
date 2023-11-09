@@ -5,8 +5,16 @@ require 'db.php';
 
 // Function to check token validity
 function isTokenValid($token) {
-    // Check the token against the database
-    // Return true if valid and not expired, false otherwise
+    // Retrieve the token information from the database
+    $tokenInfo = getTokenInfoFromDatabase($token);
+    
+    if ($tokenInfo) {
+        $currentDate = new DateTime();
+        $expiryDate = new DateTime($tokenInfo['expiry_date']);
+        return $currentDate < $expiryDate;
+    }
+    
+    return false;
 }
 
 // Function to serve video content
